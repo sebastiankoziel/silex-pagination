@@ -10,7 +10,7 @@ namespace SKoziel\Silex\Pagination;
 
 use Kilte\Pagination\Pagination;
 
-class PaginationTrait
+Trait PaginationTrait
 {
     /**
      * @param int $total
