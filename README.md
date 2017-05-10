@@ -18,7 +18,7 @@ $app->register(new SKoziel\Silex\Pagination\PaginationServiceProvider(), array(
     ));
 ```
 
-##Trait
+## Trait
 
 ```php
 use SKoziel\Silex\Pagination\PaginationTrait;
@@ -28,14 +28,14 @@ $pagination = $app->pagination($total, $current, $perPage, $neighbours);
 
 ## Usage
 
-###Building pagination
+### Building pagination
 
 ```php
 $pagination = $app['pagination'](100, 5);
 $pages = $pagination->build();
 ```
 
-###Creating pagination friendly twig
+### Creating pagination friendly twig
 
 ```twig
 <ul>
@@ -55,7 +55,7 @@ $pages = $pagination->build();
 </ul>
 ```
 
-###Rendering twig with pagination
+### Rendering twig with pagination
 
 ```php
 $app['twig']->render('pagination.twig', array('pages' => $pages, 'current' => $pagination->currentPage()));
